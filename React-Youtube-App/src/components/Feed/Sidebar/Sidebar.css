@@ -1,0 +1,91 @@
+.sidebar {
+    min-width: 200px;
+    max-width: 220px;
+    flex: 1;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.categories {
+    height: calc(100vh - 150px);
+}
+
+.git-link:hover {
+    color: red;
+}
+
+
+
+.categories ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.categories ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+    max-width: 150px;
+    white-space: nowrap;
+}
+
+.categories ul li:hover {
+    background-color: gray;
+}
+
+.categories ul li p {
+    font-size: 1.3rem;
+}
+
+.categories ul li:hover p {
+    color: red;
+}
+
+.categories ul li:hover img {
+    color: white;
+}
+
+.categories ul li img {
+    width: 1.3rem;
+}
+
+@media (max-width: 690px) {
+
+    .sidebar {
+        flex: 0.4;
+        max-width: 100%;
+        padding: 5px 10px;
+        flex-direction: row;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        position: relative;
+    }
+
+    .categories ul {
+        flex-direction: row;
+        height: 50px;
+        overflow-x: hidden;
+        overflow: auto;
+    }
+
+    .categories ul li {
+        background-color: gray;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .git-link {
+        display: none;
+    }
+}

@@ -1,0 +1,17 @@
+main {
+    height: calc(100vh - 70px);
+    padding: 10px 0 0 3%;
+    display: flex;
+    position: relative;
+}
+
+
+
+@media (max-width: 690px) {
+
+    main {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+}

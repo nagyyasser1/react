@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+html,
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+
+@media (max-width: 690px) {
+
+    html,
+    body {
+        font-size: 13px;
+    }
+
+}
+
+/* utility */
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+/*  */
+
+/* width */
+::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #888;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #f1f1f1;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/*  */
+
+.app {
+    max-width: 1510px;
+    margin: auto;
+}
